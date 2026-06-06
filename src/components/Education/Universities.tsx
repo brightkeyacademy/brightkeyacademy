@@ -56,7 +56,7 @@ export default function Universities() {
   };
 
   return (
-    <section className="relative w-full py-20 md:py-24 bg-white overflow-hidden z-20">
+    <section id="universities" className="relative w-full py-20 md:py-24 bg-white overflow-hidden z-20">
       
       {/* Subtle Premium Mesh Gradients */}
       <div className="absolute top-10 left-[-10%] w-[500px] h-[500px] bg-blue-50/50 rounded-full blur-[100px] pointer-events-none" />

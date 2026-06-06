@@ -29,10 +29,10 @@ export default function AcademyNavbar() {
   }, [isOpen]);
 
   const navLinks = [
-    { name: "Home", href: "#" },
-    { name: "About Us", href: "#about" },
-    { name: "Universities", href: "#universities" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about" },
+    { name: "Universities", href: "/#universities" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -95,7 +95,7 @@ export default function AcademyNavbar() {
           <div className="flex items-center gap-3 z-10">
             {/* Desktop Button */}
             <div className="hidden md:block">
-              <Link href="#contact">
+              <Link href="/contact">
                 <button className="group relative px-7 py-3 bg-slate-900 text-white rounded-full text-sm font-bold overflow-hidden shadow-lg transition-all duration-300 active:scale-95 transform-gpu">
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <span className="relative flex items-center gap-2">
@@ -174,7 +174,7 @@ export default function AcademyNavbar() {
                   transition={{ delay: 0.1 + navLinks.length * 0.1 }}
                   className="mt-auto pt-8 pb-8 border-t border-slate-100"
                 >
-                  <Link href="#contact" onClick={() => setIsOpen(false)}>
+                  <Link href="/contact" onClick={() => setIsOpen(false)}>
                     <button className="w-full py-4 bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white rounded-2xl text-lg font-bold flex items-center justify-center gap-2 shadow-lg shadow-blue-500/25 transition-all active:scale-95 transform-gpu">
                       Apply Now
                       <ArrowRight className="w-5 h-5" />
