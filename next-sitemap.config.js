@@ -10,8 +10,14 @@ module.exports = {
   robotsTxtOptions: {
     policies: [
       { userAgent: "*", allow: "/", disallow: ["/api/", "/_next/", "/admin/"] },
-      { userAgent: "GPTBot", disallow: "/" },
-      { userAgent: "CCBot", disallow: "/" },
+      
+      // 2025/2026 GEO (Generative Engine Optimization) - Allowing Top AI Bots to Crawl & Recommend the Site
+      { userAgent: "GPTBot", allow: "/" },           // ChatGPT Crawler
+      { userAgent: "ChatGPT-User", allow: "/" },     // ChatGPT Custom Actions
+      { userAgent: "Google-Extended", allow: "/" },  // Google Gemini AI Crawler
+      { userAgent: "Anthropic-ai", allow: "/" },     // Anthropic Claude Crawler
+      { userAgent: "PerplexityBot", allow: "/" },    // Perplexity AI Search Crawler
+      { userAgent: "CCBot", allow: "/" },            // Common Crawl (AI Training Dataset)
     ],
     additionalSitemaps: ["https://brightkeyacademy.com/sitemap.xml"],
   },
