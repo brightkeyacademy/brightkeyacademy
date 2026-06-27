@@ -81,7 +81,7 @@ export default function AcademyFeatures() {
             <motion.div animate={{ rotate: -360 }} transition={{ duration: 50, repeat: Infinity, ease: "linear" }} className="absolute w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] rounded-full border border-violet-200/50 pointer-events-none" />
             
             <motion.div variants={floatImageVariants} animate="animate" className="relative w-[60%] lg:w-[75%] max-w-[320px] aspect-[4/5] drop-shadow-[0_20px_40px_rgba(37,99,235,0.15)]">
-              <Image src="/education/about-tall.png" alt="Student success" fill className="object-contain" priority />
+              <Image src="/education/about-group.png" alt="Student success" fill className="object-contain" priority />
             </motion.div>
           </div>
 
