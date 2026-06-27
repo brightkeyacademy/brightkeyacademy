@@ -149,8 +149,11 @@ export default function Footer() {
               <li className="flex items-start gap-3 text-sm text-slate-500 font-medium">
                 <MapPin className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
                 <span>
-                  123 Bright Key Tower, <br />Colombo 03, Sri Lanka.
-                </span>
+211/ 32/2/2, <br />
+Manis Daias mw, <br />
+Colombo rd, <br />
+Raththanapitiya, Sri Lanka. 
+</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-slate-500 font-medium">
                 <Phone className="w-5 h-5 text-blue-500 shrink-0" />
